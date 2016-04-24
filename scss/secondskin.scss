@@ -1,0 +1,222 @@
+$break-small: 550px;
+$tweak-rings: 380px;
+$break-small-med: 599px;
+$tweak-landscape-phone: 620px;
+$break-medium: 750px;
+$break-medium-large: 950px;
+$break-large: 1000px;
+$break-xlarge: 1200px;
+
+$title-font: 'Cinzel', serif;
+$body-font: 'PT Sans Narrow', sans-serif;
+
+
+
+$white: #BBB;
+$gold1: #bf9567;
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+	font-size: 0;
+}
+
+body{
+	overflow-x: hidden; //Stop .row from making a horizontal scroll bar with its negative margin
+	background: #000;
+	height: 100%;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+h1{
+	font-size: 50px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: $title-font;
+	font-weight: lighter;
+	color: $white;
+}
+
+h2{
+	text-align: center;
+	font-family: $title-font;
+	font-weight: lighter;
+	color: $white;
+	font-size: 26px;
+}
+
+p{
+	font-family:  $body-font;
+	font-size: 18px;
+	color: $white;
+}
+
+
+
+.intro{
+	width: 100%;
+	margin: 50px 0 100px 0;
+
+	.thesvg{
+		display: flex;
+		justify-content: center;
+		padding: 0 0 30px 0;
+	}
+}
+
+  /////////////////////
+ ////ARTICLES/////////
+/////////////////////
+
+article{
+	position: relative;
+	width: 100%;
+	margin: 0 0 200px 0;
+}
+
+.textbox{
+	padding: 20px;
+	border: 1px solid white;
+	text-shadow: 1px 1px #000;
+	width: 200px;
+
+
+	p{
+		padding: 0 0 20px 0;		
+	}
+
+	span{
+		font-family:  $body-font;
+		font-size: 18px;
+		color: $white;
+		font-style: italic;		
+	}
+}
+
+.articulus{	
+
+	&__leg{
+		// position: absolute;
+		vertical-align: bottom;  
+	}
+
+	&__models{
+		vertical-align: top; 
+	}
+
+	&__finger{
+		// position: absolute;		
+		// top: 0;
+	}
+	&__textbox{
+		margin: 0 auto;
+		// position: absolute;
+		// left: 40%;
+		// top: 50px;
+	}
+}
+
+
+.manibus{
+
+	&__girl{
+		position: absolute;
+		top: 40px;
+		width: 100%;
+	}
+
+	&__textbox{
+		position: absolute;
+		right: 5%;
+		top: 50px;
+	}
+}
+
+.condulus{
+
+	&__ring{
+		position: absolute;
+		// bottom: 5%;
+	}
+
+	&__textbox{
+		// position: absolute;
+		// right: 15%;
+		// top: 5%;
+		margin: 50px auto 0 auto;
+
+	}
+}
+
+.decorio{
+
+	&__textbox{
+		position: absolute;
+		right: 8%;
+		width: 200px;
+		top: 10%;
+	}
+}
+
+.pellis{
+
+	&__ring{
+		// position: absolute;	
+		// bottom: 100px;
+		// left: -40px;
+	}
+
+	&__textbox{
+		// position: absolute;
+		// left: 10%;
+		// top: 20%;
+		margin: 0 auto;
+	}
+}
+
+.chryseum{
+
+	&__guy{
+		// position: absolute;
+		// width: 100%;	   
+	}
+	&__ring{
+		position: absolute;		
+		bottom: -120px;
+		left: -60px;
+	}
+	&__textbox{
+		position: absolute;
+		left: 5%;
+		width: 200px;
+		top: 50px;
+	}
+}
+
+.aureus{
+
+	&__ring{
+		position: absolute;	
+		bottom: 100px;
+		left: -40px;
+	}
+
+	&__textbox{
+		position: absolute;
+		left: 35%;
+		width: 200px;
+		top: 20%;
+	}
+}

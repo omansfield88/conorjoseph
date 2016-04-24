@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cover</title>
+
+<script type="text/javascript" src="js/noframework.waypoints.js"></script>
+
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+body, html{
+	height: 100%;
+}
+#cover{
+	background: url("img/coverbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 0.5;
+}
+
+#container{
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.rest{
+	top:0;
+	left:0;
+	z-index: 1;
+}
+
+p{
+	font-size: 60px;
+	margin: 0 200px;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<section id="cover" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+</section>
+
+<div id="container">
+<section class="rest" >
+	<p>ONE.</p>
+	<p>Two.</p>
+	<p>Three.</p>
+	<p>Four</p>
+	<p>Five.</p>
+	<p>Six.</p>
+	<p>Seven.</p>
+	
+</section>
+</div>
+
+<script type="text/javascript" src="js/skrollr.js"></script>
+
+    <script type="text/javascript">
+
+
+    var s = skrollr.init({
+    	
+    });
+
+
+
+
+    var waypoint = new Waypoint({
+	  element: document.getElementById('cover'),
+	  handler: function(direction) {
+
+	  	var fromTop = window.pageYOffset + "px";
+
+	    if (direction === 'down') {
+	    	console.log('going down')
+	    	document.getElementById('container').style.position = "relative";
+	    	document.getElementById('container').style.top = fromTop;
+	    }
+	  },
+	  offset: '-50%'
+	})
+
+	var waypoint2 = new Waypoint({
+	  element: document.getElementById('cover'),
+	  handler: function(direction) {
+	    if (direction === 'up') {
+	    	console.log('going up')
+	    	document.getElementById('container').style.position = "fixed";
+	    	document.getElementById('container').style.top = "0";
+	    }
+	  },
+	  offset: '-50%'
+	})
+
+
+    </script>
+
+</body>
+</html>

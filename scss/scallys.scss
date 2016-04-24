@@ -1,0 +1,210 @@
+$break-small: 530px;
+$break-medium: 750px;
+$break-large: 1080px;
+
+$body-font: 'Roboto', sans-serif;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+nav{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+#primary_nav_wrap
+{
+	background: #343434;
+	margin: 0 auto;
+	max-width: 403px;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	// position:relative;	
+	margin:0;
+	padding:0;
+	display: flex;
+	justify-content: center;
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font-size:16px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:$body-font;
+	font-weight: lighter;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	display: inline-block;
+	margin:0;
+	padding:0;
+	transition: 0.2s;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#343434;
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#666666;
+	transition: 0.2s;
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#343434;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+	line-height: 50px;
+	margin: 20px 0 20px 0;
+	
+
+	@media screen and (min-width: $break-medium) {
+		font-size: 80px;
+		line-height: 80px;
+		
+	}
+
+	@media screen and (min-width: $break-large) {
+		font-size: 120px;
+		line-height: 120px;
+		
+	}
+
+}
+
+p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+    line-height: 26px;
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0 0 0;   
+    font-weight: 300;
+    vertical-align: top;
+
+    @media screen and (min-width: $break-medium) {
+		width: 40%;
+		font-size: 25px;
+		line-height: 30px;
+		padding: 0 20px 0 0;
+	}
+}
+
+img{
+	width:100%;
+}
+
+#intro{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+
+	@media screen and (min-width: $break-medium) {
+		
+	}
+}
+
+#box{
+	width:100%;
+	margin: 0 auto;
+	
+
+	@media screen and (min-width: $break-small) {
+		width: 70%;
+		display: flex;
+		justify-content: center;
+	}
+
+	img{
+		display:block;
+	}
+
+	&__left{
+		display: block;
+		width: 100%;
+
+		@media screen and (min-width: $break-small) {
+			width: 50%;
+		}
+	}
+
+	&__right{
+		display: block;
+		width: 100%;
+
+		@media screen and (min-width: $break-small) {
+			width: 50%;
+		}
+	}
+}
+
+
+#A1{
+	
+}
+
+#A2{
+	
+}
+
+#A3{
+	
+}
+
+#A4{
+}
+
+#A5{
+	
+}
+
+#A6{
+}

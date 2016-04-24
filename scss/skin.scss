@@ -1,0 +1,1091 @@
+$break-small: 550px;
+$tweak-rings: 380px;
+$break-small-med: 599px;
+$tweak-landscape-phone: 620px;
+$break-medium: 750px;
+$break-medium-large: 950px;
+$break-large: 1000px;
+$break-xlarge: 1200px;
+
+$title-font: 'Cinzel', serif;
+$body-font: 'PT Sans Narrow', sans-serif;
+
+$gold-border: 5px outset #bf9567;
+
+$white: #BBB;
+$gold1: #bf9567;
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+nav{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+#primary_nav_wrap
+{
+	background: #343434;
+	margin: 0 auto;
+	max-width: 403px;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	// position:relative;	
+	margin:0;
+	padding:0;
+	display: flex;
+	justify-content: center;
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font-size:16px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:'Roboto', sans-serif;
+	font-weight: lighter;
+	text-align: left;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	display: inline-block;
+	margin:0;
+	padding:0;
+	transition: 0.2s;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#343434;
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#666666;
+	transition: 0.2s;
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#343434;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+
+
+//RESETS etc//
+//////////////
+body{
+	font-size: 100%;
+	background: #000000;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body, html{
+	height: 100%;
+}
+
+//Tyopgraphy//
+h2{
+		color: $white;
+		font-size: 40px;
+		font-family: $title-font;
+		text-align: center;
+		letter-spacing: 5px;
+		font-weight: normal;
+
+		@media screen and (min-width: $break-small) {
+			font-size: 60px;
+		}
+		@media screen and (min-width: $break-medium) {
+			font-size: 90px;
+		}
+	}
+
+h3{
+	color: $white;
+	font-size:26px;
+	text-align:center;
+	font-family: $body-font;
+	margin: 0 0 10px 0;
+	font-weight: 400;
+}
+
+p{
+	font-family: $body-font;
+	color: $white;
+	font-size: 25px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent)
+}
+
+
+#outer-container{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	transition: 0.25s;
+	margin: 80px 0 0 0;
+}
+
+
+
+.svgEffect{
+	display: none;
+}
+
+.thesvg--top{
+	display: flex;
+	justify-content: center;
+}
+
+// .thesvg--mid{
+// 	position: absolute;
+// 	left:0;
+// 	top:0;
+// }
+
+.thesvg--bottom{
+	display: flex;
+	justify-content: center;
+	margin: 100px 0 0 0;
+}
+
+
+.intro{
+	// background: #2B2B2B;
+	width: 100%;
+// 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedbd1+0,d6d6d6+100 */
+// background: #2B2B2B; /* Old browsers */
+// background: -moz-linear-gradient(-45deg,  #2B2B2B 0%, #1D1D1D 100%); FF3.6-15
+// background: -webkit-linear-gradient(-45deg,  #2B2B2B 0%,#1D1D1D 100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(135deg,  #2B2B2B 0%,#1D1D1D 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+	height: 100%;
+	margin: 20px 20px 100px 20px;	
+	// border: $gold-border;
+	//For animation
+	opacity: 0;
+
+
+
+	@media screen and (min-width: $break-small) {
+		margin: 40px 20px 20px 20px;
+	}
+
+	@media screen and (min-width: $break-medium) {
+		width:80%;
+		max-width: 800px;
+		padding: 0 50px 50px 50px;
+		margin: 20px 50px 100px 50px;
+	}	
+
+	h1{
+		font-family: $title-font;
+		color: $white;
+		display: block;
+		font-weight: lighter;
+		text-align: center;
+		font-size: 100px;
+		margin: 50px 0;
+		// letter-spacing: -80px;
+		
+
+		// @media screen and (min-width: $break-small) {
+		// 	font-size: 200px;
+		// }
+
+		// @media screen and (min-width: $break-medium) {
+		// 	font-size: 200px;
+		// }
+
+		// @media screen and (min-width: $break-large) {
+		// 	font-size: 300px;
+		// }	
+
+	}
+
+	span{
+		font-size: 95px;
+
+		@media screen and (min-width: $break-small) {
+			font-size: 120px;
+		}
+
+		@media screen and (min-width: $break-medium) {
+			font-size: 220px;
+		}
+	}
+
+		
+
+
+		&__firstRow{	
+			width: 80%;
+			margin: 0 auto;	
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 50px 0 0 0;
+
+				@media screen and (min-width: $break-medium) {
+					width: auto;
+				}	
+
+			&__textBox{
+				width: 100%;
+				vertical-align: top;
+				border: 1px solid #fff;
+				padding: 20px;
+					
+					@media screen and (min-width: $break-medium) {
+						width: 50%;
+					}				
+				
+			}
+
+			&__image{
+				width: 100%;
+				margin: 30px 0 0 0;
+				box-sizing: border-box;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				// background-image: url('../img/products/ring1.png');
+				// background-repeat: no-repeat;
+				// background-position: center;
+				// background-size: 100%;
+
+					@media screen and (min-width: $break-small) {
+						// background-size: 70%;
+						
+					}
+					
+
+					@media screen and (min-width: $break-medium) {
+						width: 50%;
+						margin: 0;
+						// background-position: right center;
+						// background-size: 80%;
+
+					}
+
+					@media screen and (min-width: $break-large){
+						width: 50%;
+						
+					}
+
+					img{						
+						width: 60%;
+						max-width: 400px;
+						max-height: 400px;
+
+						@media screen and (min-width: $break-medium) {
+							padding: 0 0 0 40px;
+						}
+					}
+
+				
+			}//__image
+
+					
+		}//__firstRow
+
+		&__secondRow{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			// background: #ccc;
+			margin: 50px 0 0 0;
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+			position: relative;
+
+			@media screen and (min-width: $break-small){					
+				flex-direction: unset;
+			}
+			
+			&__finger{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				margin: 30px 0 0 0;
+
+				@media screen and (min-width: $break-small){					
+					width: 50%;
+					margin: 0;					
+				}	
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+
+			&__girl{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				box-sizing: border-box;
+				// border: $gold-border;
+
+				@media screen and (min-width: $break-small){
+					width: 50%;
+				}	
+
+				img{
+					margin: 0 auto;
+					width: 100%;
+					height: 100%;
+				}
+			}					
+		}//__secondRow
+}
+
+
+
+
+
+
+
+
+
+//PRODUCT GRID//
+////////////////
+
+
+.products{
+	max-width: 1200px;
+	margin: 20px auto 100px auto;
+	background: #2B2B2B;
+	background: -webkit-linear-gradient(bottom left, #2B2B2B 0%, #1D1D1D 100%);
+	background: -o-linear-gradient(bottom left, #2B2B2B 0%, #1D1D1D 100%);
+	background: linear-gradient(to top right, #2B2B2B 0%, #1D1D1D 100%);
+	border: $gold-border;
+
+		
+	
+
+
+	@media screen and (min-width: -medium) {
+		margin: 50px 20px 100px 20px;
+	}
+
+	@media screen and (min-width: -medium) {
+		margin: 50px 50px 100px 50px;
+	}
+
+	@media screen and (min-width: -large) {
+		margin: 50px auto 100px auto;
+	}
+	
+}
+
+
+// .highlight{
+// 	height: 200px;
+// 	width: 200px;
+// 	border: 1px solid $gold1;
+// 	position: absolute;
+
+// }
+
+.itemGrid--top{
+	display: flex;
+	justify-content: space-around;	
+	margin: 0 0 20px 0;
+	padding: 50px 0 0 0;
+	
+
+		@media screen and (min-width: $break-small) {
+			
+		}
+
+		@media screen and (min-width: $break-medium) {
+			margin: 0 0 30px 0;
+		}
+
+		@media screen and (min-width: $break-large) {
+			margin: 0 0 70px 0;
+		}
+
+
+
+		&__item--first{			
+			max-width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			position: relative;
+			cursor: pointer;
+			
+
+			@media screen and (min-width: $break-small) {
+				padding: 0 0 0 100px;
+			}	
+
+			img{
+				width: 80%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}
+
+		&__item{			
+			max-width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;	
+
+			img{
+				width: 80%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}
+
+		&__item--last{			
+			max-width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			cursor: pointer;
+
+			@media screen and (min-width: $break-small) {
+				padding: 0 100px 0 0;
+			}				
+
+			img{
+				width: 80%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}
+}
+
+.itemGrid--mid{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 20px auto;
+	flex-wrap: wrap;
+	max-width: 240px;
+
+		@media screen and (min-width: $tweak-rings) {
+		max-width: 100%;		
+		}
+
+		@media screen and (min-width: $break-small) {			
+			justify-content: space-between;
+			flex-wrap: nowrap;
+
+		}
+
+		@media screen and (min-width: $break-medium) {
+			margin: 0 0 30px 0;
+		}	
+
+		@media screen and (min-width: $break-large) {
+			margin: 0 0 70px 0;
+		}
+
+		&__item--first{			
+			max-width: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			@media screen and (min-width: $tweak-rings) {
+				min-width: 160px;
+			}
+			
+
+			@media screen and (min-width: $break-small) {
+				max-width: 200px;
+				min-width: 130px;
+			}	
+
+			img{
+				width: 100%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}
+
+		&__item--second{			
+			max-width: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			@media screen and (min-width: $tweak-rings) {
+				min-width: 160px;
+			}
+			
+
+			@media screen and (min-width: $break-small) {
+				max-width: 200px;
+				min-width: 130px;
+			}	
+
+			img{
+				width: 70%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}
+
+		&__item--third{			
+			max-width: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			@media screen and (min-width: $tweak-rings) {
+				min-width: 160px;
+			}			
+
+			@media screen and (min-width: $break-small) {
+				max-width: 200px;
+				min-width: 130px;
+			}	
+
+			img{
+				width: 70%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}
+
+		&__item--fourth{			
+			max-width: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			@media screen and (min-width: $tweak-rings) {
+				min-width: 160px;
+			}
+			
+
+			@media screen and (min-width: $break-small) {
+				max-width: 200px;
+				min-width: 130px;
+			}	
+
+			img{
+				width: 80%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}		
+}
+
+
+.itemGrid--bottom{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0 70px 0;
+
+
+		&__item--first{			
+			max-width: 200px;			
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			cursor: pointer;			
+
+			@media screen and (min-width: $break-small) {
+				padding: 0 0 0 100px;
+			}
+
+			img{
+				width: 80%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}	
+		}
+
+
+		&__item{			
+			max-width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;	
+
+
+
+			img{
+				width: 80%;
+				&:hover{
+					 -webkit-filter: grayscale(80%);
+					 filter: grayscale(80%);
+				}
+			}
+		}
+
+		&__item--last{			
+			max-width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			cursor: pointer;
+
+			@media screen and (min-width: $break-small) {
+				padding: 0 100px 0 0;
+			}
+
+
+			img{
+				width: 70%;
+				&:hover{
+					-webkit-filter: grayscale(80%);
+					filter: grayscale(80%);
+				}
+			}
+		}
+}
+
+
+
+
+  /////////////////////////
+ ////Models///////////////
+/////////////////////////
+.models{
+	width: 100%;
+	font-size: 0;
+
+	&__photo{
+		width: 50%;
+		display: inline-block;
+		
+		box-sizing: border-box;
+
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /////////////////////////
+ ////Modal////////////////
+/////////////////////////
+.modalCover{
+	position: fixed;	
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+
+.modalContent{
+	opacity: 0;
+}
+
+.modal{
+	position: fixed;	
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;	
+
+	@media screen and (min-width: $break-xlarge) {
+		margin: 0 50px 0 50px;
+	}
+
+	&__box{
+		display: block;
+		max-height: 280px;
+		max-width: 280px;
+		border: $gold-border;
+		margin: 0 auto;
+		background: url("../img/skin/marblebg.png");
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// background-position: center;
+		opacity: 1;	
+
+		@media screen and (min-width: $break-small) {
+			display: inline-block!important;
+			max-height: 300px;
+			max-width: 300px;
+		}
+
+		@media screen and (min-width: $break-small-med) {
+			display: block!important;
+			max-width: 400px;
+			max-height: 400px;
+		}
+
+		@media screen and (min-width: $tweak-landscape-phone) {
+			display: inline-block!important;
+			max-height: 300px;
+			max-width: 300px;
+		}		
+
+
+		@media screen and (min-width: $break-medium) {
+			display: block!important;
+			max-width: 500px;
+			max-height: 500px;
+		}
+
+		@media screen and (min-width: $break-medium-large){
+			display: inline-block!important;
+			max-width: 500px;
+			max-height: 500px;
+		}
+
+		@media screen and (min-width: $break-large) {	
+			display: inline-block!important;		
+			max-width: 500px;
+			max-height: 500px;
+		}
+
+		// @media screen and (min-width: $break-xlarge) {
+		// 	max-width: 700px;
+		// 	max-height: 700px;
+		// }
+
+		img{
+			// width: 50%;
+			// height: 50%;
+		}
+	}
+
+	&__text{
+		display: inline-block;
+		vertical-align: top;
+		min-width: 290px;	
+		
+
+		@media screen and (min-width: $break-small) {
+			min-width: 200px;
+		}
+
+		@media screen and (min-width: $break-small-med) {
+			min-width: 400px;			
+		}
+
+		@media screen and (min-width: $tweak-landscape-phone) {			
+			min-width: 300px;
+		}
+
+		@media screen and (min-width: $break-medium) {
+			min-width: 500px;
+		}
+
+		@media screen and (min-width: $break-medium-large){
+			min-width: 200px;
+			padding: 0 0 0 10px;
+		}
+
+		@media screen and (min-width: $break-large) {
+			min-width: 200px;
+		}
+
+		h3{
+			color: $white;
+			font-size: 24px;
+			font-family: $title-font;				
+			text-align: left;	
+			
+			@media screen and (min-width: $break-small) {
+				font-size: 30px;
+				margin: 0 0 15px 0;
+			}
+
+			@media screen and (min-width: $break-small-med) {
+				font-size: 45px;				
+			}
+
+			@media screen and (min-width: $tweak-landscape-phone) {	
+				font-size: 30px;
+			}
+
+			@media screen and (min-width: $break-medium) {
+				font-size: 40px;
+			}
+		}
+
+		hr{
+			width: 100%;
+			border: 0;
+		    height: 1px;
+		    background: $white;
+		}
+
+		span{
+			color: $white;
+			font-size: 18px;
+			display: block;
+			font-family: $title-font;
+			font-style: italic;
+
+			@media screen and (min-width: $break-small) {
+				font-size: 25px;
+			}
+
+			@media screen and (min-width: $break-small-med) {
+				font-size: 35px;				
+			}
+
+			@media screen and (min-width: $break-medium) {
+				font-size: 22px;
+			}
+
+			@media screen and (min-width: $tweak-landscape-phone) {
+				font-size: 25px;
+			}
+		}
+
+		p{
+			color: $white;
+			font-size: 15px;
+			display: block;
+			font-family: $title-font;
+			margin: 5px 0 5px 0;
+
+			@media screen and (min-width: $break-small) {
+				font-size: 18px;
+				margin: 10px 0 10px 0;
+			}
+
+			@media screen and (min-width: $break-small-med) {
+				font-size: 26px;				
+			}
+
+			@media screen and (min-width: $break-small) {
+				font-size: 20px;
+			}
+
+			@media screen and (min-width: $break-medium) {
+				font-size: 16px;
+			}
+
+			@media screen and (min-width: $tweak-landscape-phone) {
+				font-size: 18px;
+			}
+		}
+
+		span{
+			
+
+		}
+
+		#nav-next{
+			float: right;
+			display: inline-block;
+			color: $white;
+			font-family: $body-font;
+			font-size: 24px;
+			border: 1px solid $white;
+			width: 50px;
+			height: 50px;
+			padding: 8px 0 5px 10px;
+			box-sizing: border-box;
+			margin: 10px 0 10px 0;
+
+			&:hover{
+				background-color: $white;
+				color: #000;
+			}
+			
+			@media screen and (min-width: $break-small) {
+				margin: 0 0 10px 0;
+			}
+		}
+
+		#nav-prev{
+			
+			display: inline-block;
+			color: $white;
+			font-family: $body-font;
+			font-size: 24px;
+			border: 1px solid $white;
+			width: 50px;
+			height: 50px;
+			padding: 8px 0 5px 10px;
+			box-sizing: border-box;
+			margin: 10px 0 10px 0;
+
+			&:hover{
+				background-color: $white;
+				color: #000;
+			}
+			
+			@media screen and (min-width: $break-small) {
+				margin: 0 0 10px 0;
+			}
+		}		
+	}
+}
+
+.close-container{
+	display: none;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 0 10px 0;
+
+	@media screen and (min-width: $break-small) {
+		display: flex;
+	}
+}
+
+.close-container-mobile{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 0 10px 0;
+	color: #fff;
+
+	@media screen and (min-width: $break-small) {
+		display: none;
+	}
+}
+
+.close-btn{
+	border: 1px solid $white;
+	width: 50px;
+	height: 50px;
+	padding: 8px 5px 5px 5px;
+	box-sizing: border-box;
+	margin: 10px 0 0 0;
+
+	&:hover{
+		background-color: $white;
+	}
+
+	&:hover span{
+		color: #000;
+	}
+
+	@media screen and (min-width: $break-large) {
+		margin: 0
+	}
+
+	span{
+		font-family: $body-font;
+		text-align: center;
+		font-size: 25px;
+		font-style: normal;
+		display: block;
+	}
+}
+
+.blurThis{
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	filter: blur(5px);
+	transition: 0.5s; 
+}
+
+#show{
+	display: flex;
+
+}
+#hide{
+	display: none;
+}
+

@@ -1,0 +1,53 @@
+var itemPosition = 
+[
+	{
+		"title" : "Ear Cuff",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Ear Cuff",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Ear Cuff",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Thumb Ring",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Knuckle Ring",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Ring",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Ring",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Ring",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Ring",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	},
+	{
+		"title" : "Ring",
+		"material" : "Rose Gold",
+		"description" : "To be warn balh"
+	}
+]

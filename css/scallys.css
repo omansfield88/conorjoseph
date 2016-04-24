@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999; }
+
+#primary_nav_wrap {
+  background: #343434;
+  margin: 0 auto;
+  max-width: 403px; }
+
+#primary_nav_wrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+
+#primary_nav_wrap ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter; }
+
+#primary_nav_wrap ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s; }
+
+#primary_nav_wrap ul li.current-menu-item {
+  background: #343434; }
+
+#primary_nav_wrap ul li:hover {
+  background: #666666;
+  transition: 0.2s; }
+
+#primary_nav_wrap ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #343434;
+  padding: 0; }
+
+#primary_nav_wrap ul ul li {
+  float: none;
+  width: 200px; }
+
+#primary_nav_wrap ul ul a {
+  line-height: 120%;
+  padding: 10px 15px; }
+
+#primary_nav_wrap ul ul ul {
+  top: 0;
+  left: 100%; }
+
+#primary_nav_wrap ul li:hover > ul {
+  display: block; }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 20px 0 20px 0; }
+  @media screen and (min-width: 750px) {
+    h1 {
+      font-size: 80px;
+      line-height: 80px; } }
+  @media screen and (min-width: 1080px) {
+    h1 {
+      font-size: 120px;
+      line-height: 120px; } }
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  width: 100%;
+  display: inline-block;
+  padding: 20px 0 0 0;
+  font-weight: 300;
+  vertical-align: top; }
+  @media screen and (min-width: 750px) {
+    p {
+      width: 40%;
+      font-size: 25px;
+      line-height: 30px;
+      padding: 0 20px 0 0; } }
+
+img {
+  width: 100%; }
+
+#intro {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; }
+
+#box {
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 530px) {
+    #box {
+      width: 70%;
+      display: flex;
+      justify-content: center; } }
+  #box img {
+    display: block; }
+  #box__left {
+    display: block;
+    width: 100%; }
+    @media screen and (min-width: 530px) {
+      #box__left {
+        width: 50%; } }
+  #box__right {
+    display: block;
+    width: 100%; }
+    @media screen and (min-width: 530px) {
+      #box__right {
+        width: 50%; } }
+
+/*# sourceMappingURL=scallys.css.map */
