@@ -59,8 +59,12 @@ h2{
 
 p{
 	font-family:  $body-font;
-	font-size: 18px;
+	font-size: 15px;
 	color: $white;
+
+		@media screen and (min-width: $break-small-med) {
+			font-size: 18px;
+		}
 }
 
 
@@ -83,13 +87,13 @@ p{
 article{
 	position: relative;
 	width: 100%;
-	margin: 0 0 200px 0;
+	margin: 0 0 20px 0;
 }
 
 .textbox{
 	padding: 20px;
 	border: 1px solid white;
-	text-shadow: 1px 1px #000;
+	text-shadow: 2px 2px #000;
 	width: 200px;
 
 
@@ -109,7 +113,7 @@ article{
 
 	&__leg{
 		// position: absolute;
-		vertical-align: bottom;  
+		vertical-align: top; 
 	}
 
 	&__models{
@@ -117,8 +121,8 @@ article{
 	}
 
 	&__finger{
-		// position: absolute;		
-		// top: 0;
+		position: absolute;		
+		top: 0;
 	}
 	&__textbox{
 		margin: 0 auto;
@@ -126,8 +130,33 @@ article{
 		// left: 40%;
 		// top: 50px;
 	}
+
 }
 
+.auris{
+	&__girl{
+
+	}
+
+	&__textbox{
+		position: absolute;
+		right: 5%;
+		top: 50px;
+		z-index: 5;
+	}
+}
+
+.geminus{
+	&__girl{
+
+	}
+
+	&__textbox{
+		position: absolute;
+		left: 0;
+		// top: 50px;
+	}
+}
 
 .manibus{
 
@@ -155,7 +184,7 @@ article{
 		// position: absolute;
 		// right: 15%;
 		// top: 5%;
-		margin: 50px auto 0 auto;
+		margin: 0 auto 0 auto;
 
 	}
 }
@@ -164,9 +193,10 @@ article{
 
 	&__textbox{
 		position: absolute;
-		right: 8%;
-		width: 200px;
-		top: 10%;
+		left: 0;
+		// right: 8%;
+		// width: 200px;
+		// top: 10%;
 	}
 }
 
@@ -186,6 +216,16 @@ article{
 	}
 }
 
+
+.oricula{	
+
+	&__textbox{
+		position: absolute;
+		left: 10%;
+		top: 20%;
+	}
+}
+
 .chryseum{
 
 	&__guy{
@@ -195,13 +235,14 @@ article{
 	&__ring{
 		position: absolute;		
 		bottom: -120px;
-		left: -60px;
+		left: -90px;
 	}
 	&__textbox{
-		position: absolute;
-		left: 5%;
-		width: 200px;
-		top: 50px;
+		// position: absolute;
+		// left: 5%;
+		// width: 200px;
+		// top: 50px;
+		margin: 0 auto;
 	}
 }
 

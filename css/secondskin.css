@@ -34,8 +34,11 @@ h2 {
 
 p {
   font-family: "PT Sans Narrow", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   color: #BBB; }
+  @media screen and (min-width: 599px) {
+    p {
+      font-size: 18px; } }
 
 .intro {
   width: 100%;
@@ -48,12 +51,12 @@ p {
 article {
   position: relative;
   width: 100%;
-  margin: 0 0 200px 0; }
+  margin: 0 0 20px 0; }
 
 .textbox {
   padding: 20px;
   border: 1px solid white;
-  text-shadow: 1px 1px #000;
+  text-shadow: 2px 2px #000;
   width: 200px; }
   .textbox p {
     padding: 0 0 20px 0; }
@@ -64,11 +67,24 @@ article {
     font-style: italic; }
 
 .articulus__leg {
-  vertical-align: bottom; }
+  vertical-align: top; }
 .articulus__models {
   vertical-align: top; }
+.articulus__finger {
+  position: absolute;
+  top: 0; }
 .articulus__textbox {
   margin: 0 auto; }
+
+.auris__textbox {
+  position: absolute;
+  right: 5%;
+  top: 50px;
+  z-index: 5; }
+
+.geminus__textbox {
+  position: absolute;
+  left: 0; }
 
 .manibus__girl {
   position: absolute;
@@ -82,26 +98,26 @@ article {
 .condulus__ring {
   position: absolute; }
 .condulus__textbox {
-  margin: 50px auto 0 auto; }
+  margin: 0 auto 0 auto; }
 
 .decorio__textbox {
   position: absolute;
-  right: 8%;
-  width: 200px;
-  top: 10%; }
+  left: 0; }
 
 .pellis__textbox {
   margin: 0 auto; }
 
+.oricula__textbox {
+  position: absolute;
+  left: 10%;
+  top: 20%; }
+
 .chryseum__ring {
   position: absolute;
   bottom: -120px;
-  left: -60px; }
+  left: -90px; }
 .chryseum__textbox {
-  position: absolute;
-  left: 5%;
-  width: 200px;
-  top: 50px; }
+  margin: 0 auto; }
 
 .aureus__ring {
   position: absolute;
