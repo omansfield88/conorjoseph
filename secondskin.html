@@ -65,10 +65,21 @@
 	</div>
 </div>
 
-<div class="product-slider owl-carousel">
-	
+<div class="slider-outer">
+	<div class="owl-carousel" id="slider">
+		<img src="img/skin/products/1.jpg" class="slider-img">
+		<img src="img/skin/products/2.jpg" class="slider-img">
+		<img src="img/skin/products/3.jpg" class="slider-img">
+		<img src="img/skin/products/4.jpg" class="slider-img">
+		<img src="img/skin/products/articulus.jpg" class="slider-img">
+		<img src="img/skin/products/aureus.jpg" class="slider-img">
+		<img src="img/skin/products/chryseum.jpg" class="slider-img">
+		<img src="img/skin/products/chryseum-back.jpg" class="slider-img">
+		<img src="img/skin/products/condulus.jpg" class="slider-img">
+		<img src="img/skin/products/pellis.jpg" class="slider-img">
+		<img src="img/skin/products/pellis-back.jpg" class="slider-img">
+	</div>
 </div>
-
 
 <article class="articulus">
 	<div class="articulus__finger col-sm-6">
@@ -86,8 +97,6 @@
 		<img src="img/skin/models/articulus-1.jpg">
 	</div>	
 </article>
-
-
 
 <article class="auris">
 	<div class="auris__textbox textbox">
@@ -139,8 +148,6 @@
 	</div>
 </article>
 
-
-
 <article class="decorio">
 	<div class="decorio__models col-sm-6 col-lg-5">
 		<img src="img/skin/models/decorio-1.jpg">
@@ -154,8 +161,6 @@
 		<span>18 carat gold plated ring, Bespoke fit.</span>
 	</div>
 </article>
-
-
 
 <article class="pellis">
 	<div class="pellis__ring col-sm-6">
@@ -181,8 +186,6 @@
 		<span>Highly polished 925 sterling silver, Bespoke fit.</span>
 	</div>
 </article>
-
-
 
 <article class="chryseum">
 	<div class="chryseum__ring  col-sm-6">
@@ -217,7 +220,25 @@
 
 
 
+<script>
 
+var productClicked = 0;
+var owl = $("#slider");
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	loop:true,
+    items:1,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 1000,
+    autoplaySpeed: 1000
+
+  });
+});
+
+</script>
 </body>
 
 </html>
