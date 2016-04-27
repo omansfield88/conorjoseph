@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/secondskin.css" type='text/css'>
 
+
+
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,400italic,500italic,700,700italic,300|Playfair+Display:400,400italic,700,700italic,900,900italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Cinzel:400,900,700|Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
@@ -24,11 +26,30 @@
 
 <body>
 
+<nav class="desktopNav">
+	<div id="primary_nav_wrap">
+		<ul>
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">Collections</a>
+		    <ul>
+		      <li><a href="#">Second Skin</a></li>
+		      <li><a href="#">The Comfort <br>&amp; The Horror</a></li>      
+		    </ul>
+		  </li>
+		  
+		  <li><a href="#pressJump">Press</a></li>
+		  <li><a href="#contactJump">Contact</a></li>
+		  <li><a href="#salesJump">Sales</a></li>  
+		</ul>
+	</div>
+</nav>
+
 <div class="intro">
 	<div class="title">
 		<h1>Second Skin</h1>
 		<hr>
 	</div>
+
 	<div class="thesvg">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="150px" height="75px" viewBox="0 150 300 150" xml:space="preserve">
@@ -61,7 +82,7 @@
 			</g>
 		</svg>	
 	</div>
-	<div>
+	<div class="intro__text--top">
 		<p class="col-xs-12 col-sm-3 col-sm-offset-3">Second Skin is the latest collection by Conor Joseph, which sees the Jewellery artist pay homage to the human body and its varying differences and uniqueness.</p>
 		<p class="col-xs-12 col-sm-3">The collection is made of 30 pieces, all made on fine gold plated silver, hand crafted in London’s prestigious Hatton Garden. Like most of Conor’s work, Second Skin is a dark and obscure collection, yet his use of often-uncelebrated details of the skin such as wrinkles, freckles and scarring creates provokes feelings of intimacy and poeticism.</p>
 	</div>
@@ -84,6 +105,11 @@
 
 	<span id="nav-prev">&#8592;</span>
 	<span id="nav-next">&#8594;</span>
+</div>
+
+<div class="intro__text--bottom">
+	<p class="col-xs-12 col-sm-3 col-sm-offset-3">Second Skin is the latest collection by Conor Joseph, which sees the Jewellery artist pay homage to the human body and its varying differences and uniqueness.</p>
+	<p class="col-xs-12 col-sm-3">The collection is made of 30 pieces, all made on fine gold plated silver, hand crafted in London’s prestigious Hatton Garden. Like most of Conor’s work, Second Skin is a dark and obscure collection, yet his use of often-uncelebrated details of the skin such as wrinkles, freckles and scarring creates provokes feelings of intimacy and poeticism.</p>
 </div>
 
 <article class="articulus">
@@ -257,7 +283,94 @@
 </svg>	
 </div>
 
+
+
+
+
+<div class="burgerNav">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+	<style type="text/css">
+		.st0{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	</style>
+	<g id="Layer_1">
+		<line class="st0" x1="43.6" y1="25" x2="6.4" y2="25"/>
+		<line class="st0" x1="43.6" y1="17.1" x2="6.4" y2="17.1"/>
+		<line class="st0" x1="43.6" y1="32.7" x2="6.4" y2="32.7"/>
+	</g>	
+	</svg>
+</div>
+
+<nav class="mobileNavWrapper">
+	<div class="mobileNav">
+		<div id="closeMobileNav">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+			<style type="text/css">
+				.st0{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+			</style>
+			<line class="st0" x1="38.2" y1="11.8" x2="11.8" y2="38.2"/>
+			<line class="st0" x1="38.2" y1="38.2" x2="11.8" y2="11.8"/>
+			</svg>
+		</div>
+		
+		<div class="mobileNav__collections">		
+			<p>Collections</p>
+			<a href="#" id="skin">Second Skin</a>
+			<a href="#" id="scally">THE COMFORT &amp; THE HORROR</a>
+		</div>
+		<a href="#">Home</a>
+		<a href="#">Press</a>
+		<a href="#">Contact</a>
+		<a href="#">Sales</a>
+	</div>
+</nav>
+
 <script>
+
+////////////////////////////////////////
+////////Burger Nav Open and Close//////
+//////////////////////////////////////
+$(document).ready(function(){
+	$(".burgerNav").click(function(){
+
+		$(".slider-outer").css({
+			"visibility": "hidden"
+		});
+
+		$(".mobileNavWrapper").css({
+			"display": "block"		
+		});
+
+		$(".mobileNavWrapper").animate({
+			"margin-top": "0",
+			"opacity": "1"		
+		}, 500);
+
+		$(this).animate({
+			"opacity": "0"
+		}, 500)
+	});
+
+	$("#closeMobileNav").click(function(){
+		$(".mobileNavWrapper").animate({
+			"margin-top": "20px",
+			"opacity": "0"		
+		}, 250);
+
+		setTimeout(function(){
+			$(".mobileNavWrapper").css({
+				"display": "none" 
+			});
+			$(".slider-outer").css({
+				"visibility": "visible"
+			});
+		}, 500)	
+		
+		$(".burgerNav").animate({
+			"opacity": "1"
+		}, 500)
+	})
+});
 
 
 //Initialise Owl Slider
@@ -266,7 +379,7 @@ $(document).ready(function(){
   	loop:true,
   	// nav:true,
     items:1,
-    autoplay: true,
+    // autoplay: true,
     autoplayHoverPause: true,
     autoplayTimeout: 3000,
     autoplaySpeed: 1000,

@@ -20,7 +20,8 @@
     padding: 100px 0 50px 0;
     box-sizing: border-box;
     max-width: 900px;
-    display: block; }
+    display: block;
+    margin: 0 auto; }
     .intro__text h1 {
       font-family: "Cinzel", serif;
       color: #000;
