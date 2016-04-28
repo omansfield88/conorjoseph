@@ -7,7 +7,6 @@ html {
   font-size: 0; }
 
 body {
-  overflow-x: hidden;
   background: #000;
   height: 100%; }
 
@@ -46,7 +45,10 @@ p {
 
 .intro {
   width: 100%;
-  margin: 20px 0 0 0; }
+  margin: 83px 0 0 0; }
+  .intro p {
+    font-size: 19px;
+    padding: 0 20px 0 0; }
   @media screen and (min-width: 599px) {
     .intro {
       margin: 100px 0 0 0; } }
@@ -76,6 +78,8 @@ p {
     display: block; }
     .intro__text--bottom p {
       font-size: 19px; }
+      .intro__text--bottom p:last-child {
+        padding: 20px 0 0 0; }
     @media screen and (min-width: 599px) {
       .intro__text--bottom {
         display: none; } }
@@ -98,7 +102,7 @@ p {
   top: 200px;
   left: 20%;
   color: #BBB;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   border: 1px solid #BBB;
   width: 50px;
@@ -115,7 +119,7 @@ p {
   top: 200px;
   right: 20%;
   color: #BBB;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   border: 1px solid #BBB;
   width: 50px;
@@ -143,7 +147,8 @@ article {
   padding: 20px;
   border: 1px solid white;
   text-shadow: 2px 2px #000;
-  width: 200px; }
+  width: 200px;
+  z-index: 5; }
   .textbox p {
     padding: 0 0 20px 0; }
   .textbox span {
@@ -152,68 +157,154 @@ article {
     color: #BBB;
     font-style: italic; }
 
-.articulus__leg {
-  vertical-align: top; }
-.articulus__models {
-  vertical-align: top; }
-.articulus__finger {
-  position: absolute;
-  top: 0; }
-.articulus__textbox {
-  margin: 0 auto; }
+.articulus {
+  margin: 80px 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .articulus {
+      margin: 80px 0 20px 0; } }
+  .articulus__leg {
+    vertical-align: top; }
+  .articulus__models {
+    vertical-align: top; }
+  @media screen and (min-width: 599px) {
+    .articulus__finger {
+      position: absolute;
+      top: 0; } }
+  .articulus__textbox {
+    margin: 0 auto;
+    z-index: 10; }
 
-.auris__textbox {
-  position: absolute;
-  right: 5%;
-  top: 50px;
-  z-index: 5; }
+.auris {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .auris {
+      margin: 0 0 20px 0; } }
+  .auris__textbox {
+    margin: 0 auto 20px auto; }
+    @media screen and (min-width: 599px) {
+      .auris__textbox {
+        position: absolute;
+        right: 5%;
+        top: 50px;
+        z-index: 5; } }
 
-.geminus__textbox {
-  position: absolute;
-  left: 0; }
+.geminus {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .geminus {
+      margin: 0 0 20px 0; } }
+  @media screen and (max-width: 598px) {
+    .geminus__textbox {
+      margin: 0 auto 20px auto; } }
+  @media screen and (min-width: 599px) {
+    .geminus__textbox {
+      position: absolute;
+      left: 0; } }
 
-.manibus__girl {
-  position: absolute;
-  top: 40px;
-  width: 100%; }
-.manibus__textbox {
-  position: absolute;
-  right: 5%;
-  top: 50px; }
+.manibus {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .manibus {
+      margin: 0 0 20px 0; } }
+  @media screen and (min-width: 599px) {
+    .manibus__girl {
+      position: absolute;
+      top: 40px;
+      width: 100%; } }
+  .manibus__textbox {
+    margin: 0 auto 20px auto;
+    z-index: 5; }
+    @media screen and (min-width: 599px) {
+      .manibus__textbox {
+        position: absolute;
+        right: 5%;
+        top: 50px; } }
 
-.condulus__ring {
-  position: absolute; }
-.condulus__textbox {
-  margin: 0 auto 0 auto; }
+.condulus {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .condulus {
+      margin: 0 0 20px 0; } }
+  @media screen and (min-width: 599px) {
+    .condulus__ring {
+      position: absolute; } }
+  .condulus__textbox {
+    margin: 0 auto 0 auto; }
 
-.decorio__textbox {
-  position: absolute;
-  left: 0; }
+.decorio {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .decorio {
+      margin: 0 0 20px 0; } }
+  .decorio__textbox {
+    z-index: 5; }
+    @media screen and (max-width: 598px) {
+      .decorio__textbox {
+        margin: 0 auto 20px auto; } }
+    @media screen and (min-width: 599px) {
+      .decorio__textbox {
+        position: absolute;
+        left: 0; } }
 
-.pellis__textbox {
-  margin: 0 auto; }
+.pellis {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .pellis {
+      margin: 0 0 20px 0; } }
+  .pellis__textbox {
+    margin: 0 auto; }
 
-.oricula__textbox {
-  position: absolute;
-  left: 10%;
-  top: 20%; }
+.oricula {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .oricula {
+      margin: 0 0 20px 0; } }
+  .oricula__textbox {
+    z-index: 5; }
+    @media screen and (max-width: 598px) {
+      .oricula__textbox {
+        margin: 0 auto 20px auto; } }
+    @media screen and (min-width: 599px) {
+      .oricula__textbox {
+        position: absolute;
+        left: 10%;
+        top: 20%; } }
 
-.chryseum__ring {
-  position: absolute;
-  bottom: -120px;
-  left: -90px; }
-.chryseum__textbox {
-  margin: 0 auto; }
+.chryseum {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .chryseum {
+      margin: 0 0 20px 0; } }
+  @media screen and (max-width: 598px) {
+    .chryseum__ring {
+      margin: 0 auto 20px auto; } }
+  @media screen and (min-width: 599px) {
+    .chryseum__ring {
+      position: absolute;
+      bottom: -120px;
+      left: -90px; } }
+  .chryseum__textbox {
+    margin: 0 auto; }
 
-.aureus__ring {
-  position: absolute;
-  bottom: 100px;
-  left: -40px; }
-.aureus__textbox {
-  position: absolute;
-  left: 35%;
-  width: 200px;
-  top: 20%; }
+.aureus {
+  margin: 0 0 80px 0; }
+  @media screen and (min-width: 599px) {
+    .aureus {
+      margin: 0 0 20px 0; } }
+  @media screen and (min-width: 599px) {
+    .aureus__ring {
+      position: absolute;
+      bottom: 100px;
+      left: -40px; } }
+  @media screen and (max-width: 598px) {
+    .aureus__textbox {
+      margin: 0 auto 20px auto; } }
+  @media screen and (min-width: 599px) {
+    .aureus__textbox {
+      position: absolute;
+      left: 35%;
+      width: 200px;
+      top: 20%; } }
 
 .desktopNav {
   display: none; }
@@ -241,7 +332,7 @@ article {
   font-size: 16px;
   line-height: 32px;
   padding: 0 15px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter; }
 
 #primary_nav_wrap ul li {
@@ -284,8 +375,8 @@ article {
 .burgerNav {
   position: fixed;
   display: block;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 25px;
   height: 50px;
   width: 50px;
   background: #ccc;
@@ -328,7 +419,7 @@ article {
     display: block;
     padding: 15px 10px;
     background: #666666;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-align: center;
     margin: 0 20px 10px 20px;
@@ -339,7 +430,7 @@ article {
     .mobileNav__collections p {
       display: block;
       padding: 45px 10px 0 10px;
-      font-family: "PT Sans Narrow", sans-serif;
+      font-family: 'Roboto', sans-serif;
       text-decoration: none;
       text-align: center;
       margin: 0 10px 10px 10px;

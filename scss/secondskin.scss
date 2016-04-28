@@ -27,7 +27,7 @@ html{
 }
 
 body{
-	overflow-x: hidden; //Stop .row from making a horizontal scroll bar with its negative margin
+	// overflow-x: hidden; //Stop .row from making a horizontal scroll bar with its negative margin
 	background: #000;
 	height: 100%;
 }
@@ -83,7 +83,12 @@ p{
 
 .intro{
 	width: 100%;
-	margin: 20px 0 0 0;
+	margin: 83px 0 0 0;
+
+	p{
+			font-size: 19px;
+			padding: 0 20px 0 0 ;
+	}
 
 	@media screen and (min-width: $break-small-med) {
 		margin: 100px 0 0 0;
@@ -126,6 +131,10 @@ p{
 		display: block;
 		p{
 			font-size: 19px;
+
+			&:last-child{
+				padding: 20px 0 0 0;
+			}
 		}
 
 		@media screen and (min-width: $break-small-med) {
@@ -156,7 +165,7 @@ p{
 	top:200px;
 	left: 20%;
 	color: $white;
-	font-family: $body-font;
+	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	border: 1px solid $white;
 	width: 50px;
@@ -176,7 +185,7 @@ p{
 	top:200px;
 	right: 20%;
 	color: $white;
-	font-family: $body-font;
+	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	border: 1px solid $white;
 	width: 50px;
@@ -217,6 +226,7 @@ article{
 	border: 1px solid white;
 	text-shadow: 2px 2px #000;
 	width: 200px;
+	z-index: 5;
 
 
 	p{
@@ -232,6 +242,11 @@ article{
 }
 
 .articulus{	
+	margin: 80px 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 80px 0 20px 0;
+	}
 
 	&__leg{
 		// position: absolute;
@@ -243,11 +258,16 @@ article{
 	}
 
 	&__finger{
-		position: absolute;		
-		top: 0;
+		
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;		
+			top: 0;
+		}
 	}
+
 	&__textbox{
 		margin: 0 auto;
+		z-index: 10;
 		// position: absolute;
 		// left: 40%;
 		// top: 50px;
@@ -256,50 +276,93 @@ article{
 }
 
 .auris{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
+
 	&__girl{
 
 	}
 
 	&__textbox{
-		position: absolute;
-		right: 5%;
-		top: 50px;
-		z-index: 5;
+		margin: 0 auto 20px auto;
+		
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			right: 5%;
+			top: 50px;
+			z-index: 5;
+		}
 	}
 }
 
 .geminus{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
+
 	&__girl{
 
 	}
 
 	&__textbox{
-		position: absolute;
-		left: 0;
-		// top: 50px;
+		
+		@media screen and (max-width: 598px) {
+			margin: 0 auto 20px auto;
+		}
+	
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			left: 0;
+			// top: 50px;
+		}
 	}
 }
 
 .manibus{
+	margin: 0 0 80px 0;
 
-	&__girl{
-		position: absolute;
-		top: 40px;
-		width: 100%;
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
 	}
 
-	&__textbox{
-		position: absolute;
-		right: 5%;
-		top: 50px;
+	&__girl{		
+
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			top: 40px;
+			width: 100%;
+		}
+	}
+
+	&__textbox{		
+		margin: 0 auto 20px auto;
+		z-index: 5;
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			right: 5%;
+			top: 50px;
+		}
 	}
 }
 
 .condulus{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
 
 	&__ring{
-		position: absolute;
-		// bottom: 5%;
+
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			// bottom: 5%;
+		}
 	}
 
 	&__textbox{
@@ -312,17 +375,34 @@ article{
 }
 
 .decorio{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
 
 	&__textbox{
-		position: absolute;
-		left: 0;
-		// right: 8%;
-		// width: 200px;
-		// top: 10%;
+		z-index: 5;
+		@media screen and (max-width: 598px) {
+			margin: 0 auto 20px auto;
+		}
+
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			left: 0;
+			// right: 8%;
+			// width: 200px;
+			// top: 10%;
+		}
 	}
 }
 
 .pellis{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
 
 	&__ring{
 		// position: absolute;	
@@ -339,25 +419,46 @@ article{
 }
 
 
-.oricula{	
+.oricula{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
 
 	&__textbox{
-		position: absolute;
-		left: 10%;
-		top: 20%;
+		z-index: 5;
+		@media screen and (max-width: 598px) {
+			margin: 0 auto 20px auto;
+		}
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			left: 10%;
+			top: 20%;
+		}
 	}
 }
 
 .chryseum{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
 
 	&__guy{
 		// position: absolute;
 		// width: 100%;	   
 	}
 	&__ring{
-		position: absolute;		
-		bottom: -120px;
-		left: -90px;
+		@media screen and (max-width: 598px) {
+			margin: 0 auto 20px auto;
+		}
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;		
+			bottom: -120px;
+			left: -90px;
+		}
 	}
 	&__textbox{
 		// position: absolute;
@@ -369,18 +470,30 @@ article{
 }
 
 .aureus{
+	margin: 0 0 80px 0;
+
+	@media screen and (min-width: $break-small-med) {
+		margin: 0 0 20px 0;
+	}
 
 	&__ring{
-		position: absolute;	
-		bottom: 100px;
-		left: -40px;
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;	
+			bottom: 100px;
+			left: -40px;
+		}
 	}
 
 	&__textbox{
-		position: absolute;
-		left: 35%;
-		width: 200px;
-		top: 20%;
+		@media screen and (max-width: 598px) {
+			margin: 0 auto 20px auto;
+		}
+		@media screen and (min-width: $break-small-med) {
+			position: absolute;
+			left: 35%;
+			width: 200px;
+			top: 20%;
+		}
 	}
 }
 
@@ -424,7 +537,7 @@ article{
 	font-size:16px;
 	line-height:32px;
 	padding:0 15px;
-	font-family:$body-font;
+	font-family:'Roboto', sans-serif;
 	font-weight: lighter;
 }
 
@@ -490,8 +603,8 @@ article{
 .burgerNav{
 	position: fixed;
 	display: block;
-	top: 0;
-	right: 0;
+	top: 25px;
+	right: 25px;
 	height: 50px;
 	width: 50px;
 	background: #ccc;
@@ -543,7 +656,7 @@ article{
 		display: block;
 		padding: 15px 10px;
 		background: #666666;
-		font-family: $body-font;
+		font-family: 'Roboto', sans-serif;
 		text-decoration: none;
 		text-align: center;
 		margin: 0 20px 10px 20px;
@@ -557,7 +670,7 @@ article{
 		p{
 			display: block;
 			padding: 45px 10px 0 10px;
-			font-family: $body-font;
+			font-family: 'Roboto', sans-serif;
 			text-decoration: none;
 			text-align: center;
 			margin: 0 10px 10px 10px;

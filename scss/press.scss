@@ -9,7 +9,7 @@ $break-xlarge: 1200px;
 
 $logo-font: 'Cinzel', serif;
 $body-font: 'Roboto', sans-serif;
-$title-font: 'Playfair Display', serif;
+$title-font: 'Cinzel', serif;
 
 $gold-border: 5px outset #bf9567;
 
@@ -19,13 +19,7 @@ $gold1: #bf9567;
 
 body{
 	padding: 20px;
-	box-sizing: border-box; //20px padding is included in the 80% width
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedbd1+0,d6d6d6+100 */
-background: #d8d8d8; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #d8d8d8 0%, #888888 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #d8d8d8 0%,#888888 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #d8d8d8 0%,#888888 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#888888',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #fff;
 }
 
 nav{
@@ -35,6 +29,13 @@ nav{
 	z-index: 999;
 }
 
+.desktopNav{
+	display: none;
+
+	@media screen and (min-width: $break-small) {
+		display: block;
+	}
+}
 
 #primary_nav_wrap
 {
@@ -53,16 +54,15 @@ nav{
 	justify-content: center;
 }
 
-#primary_nav_wrap ul a
+#primary_nav_wrap ul a,span
 {
 	display:block;
 	color:#fff;
 	text-decoration:none;
-	font-weight:700;
 	font-size:16px;
 	line-height:32px;
 	padding:0 15px;
-	font-family:$body-font;
+	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 }
 
@@ -116,7 +116,102 @@ nav{
 
 #primary_nav_wrap ul li:hover > ul
 {
-	display:block
+	display:block;
+}
+
+/////////////////////////
+///////Mobile Nav//////
+///////////////////////
+
+.burgerNav{
+	position: fixed;
+	display: block;
+	top: 25px;
+	right: 25px;
+	height: 50px;
+	width: 50px;
+	background: #ccc;
+	z-index: 20;
+
+	@media screen and (min-width: $break-small) {
+		display: none;
+	}
+}
+
+.mobileNavWrapper{
+	width: 100%;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 20;
+}
+
+.mobileNav{
+	background: #343434;
+	width: 80%;
+	display: block;
+	position: relative;
+	margin: 30px auto 0 auto;
+	padding: 0 0 10px 0;
+	-webkit-box-shadow: 0px 14px 14px 6px rgba(0,0,0,0.32);
+	-moz-box-shadow: 0px 14px 14px 6px rgba(0,0,0,0.32);
+	box-shadow: 0px 14px 14px 6px rgba(0,0,0,0.32);
+
+
+		@media screen and (min-width: $break-small) {
+			display: none;
+		}
+
+	#closeMobileNav{
+		background: #cccccc;
+		width: 50px;
+		height: 50px;
+		text-align: right;
+		position: absolute;
+		top: 0;
+		right: 0;
+		
+	}
+
+	a{
+		display: block;
+		padding: 15px 10px;
+		background: #666666;
+		font-family: $body-font;
+		text-decoration: none;
+		text-align: center;
+		margin: 0 20px 10px 20px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+
+	&__collections{
+		margin: 0 0 20px 0;
+		span{
+			display: block!important;
+			padding: 45px 10px 0 10px!important;
+			font-family: $body-font!important;
+			text-decoration: none!important;
+			text-align: center!important;
+			margin: 0 10px 10px 10px!important;
+			color: #fff!important;
+			font-size: 13px!important;
+		}
+
+		#skin{
+			font-family: $logo-font;
+			font-size: 22px;
+			padding: 11px 0;
+		}
+		#scally{
+			font-family: 'Oswald', sans-serif;
+			letter-spacing: 1px;
+		}
+	}
+	
 }
 
 
@@ -126,6 +221,7 @@ h2{
 	font-size: 50px;
 	line-height: 50px;
 	text-align: center;
+	font-weight: lighter
 }
 
 hr{
@@ -166,7 +262,7 @@ hr{
 		p{
 			display: block;
 			font-family: $body-font;
-			font-size: 20px;
+			font-size: 14px;
 			color: #000000;
 			text-align:center;
 			margin: 0 0 5px 0;
@@ -175,7 +271,7 @@ hr{
 		span{
 			display: block;
 			font-family: $title-font;
-			font-size: 30px;
+			font-size: 20px;
 			color: #000000;
 			text-align:center;
 			padding: 0 0 20px 0;
@@ -184,6 +280,15 @@ hr{
 	}
 
 	&__row{
+		width: 100%;
+		display: inline-block;
+
+		@media screen and (min-width: $break-medium) {
+			width: 80%;
+		}
+	}
+
+	&__row2{
 		width: 100%;
 		display: inline-block;
 

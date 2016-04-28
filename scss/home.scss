@@ -145,8 +145,8 @@ h2{
 .burgerNav{
 	position: fixed;
 	display: block;
-	top: 0;
-	right: 0;
+	top: 25px;
+	right: 25px;
 	height: 50px;
 	width: 50px;
 	background: #ccc;
@@ -159,7 +159,7 @@ h2{
 
 .mobileNavWrapper{
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	display: none;
 	top: 0;
 	left: 0;
@@ -461,6 +461,8 @@ h2{
 						border-bottom: 1px solid #000000;
 						margin: 20px 0 10px 0;
 						text-align: left;
+						font-size: 30px;
+						font-weight: bold;
 					}
 
 					p{
@@ -507,6 +509,8 @@ h2{
 						border-bottom: 1px solid #000000;
 						margin: 20px 0 10px 0;
 						text-align: left;
+						font-size: 30px;
+						font-weight: bold;
 					}
 
 					p{
@@ -533,6 +537,8 @@ h2{
 						border-bottom: 1px solid #000000;
 						margin: 0 0 10px 0;
 						text-align: left;
+						font-size: 30px;
+						font-weight: bold;
 					}
 					p{
 						column-count: 1;
@@ -682,7 +688,7 @@ h2{
 
 		h3{
 			color: #ffffff;
-			font-family: $title-font;
+			font-family: $body-font;
 			font-size: 50px;
 			text-shadow: 2px 2px 15px #000000;
 			line-height: 50px;
